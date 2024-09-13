@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            background-color: rgb(228, 233, 235);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .sidebar {
+            background-color: rgb(200, 200, 200);
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .sidebar table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .sidebar th {
+            padding: 15px 0;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-family: baskerville;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+            flex-grow: 1;
+            min-height: 100vh;
+        }
+        .section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        .section h1, .section h2, .section h3 {
+            margin-top: 0;
+            font-family: baskerville;
+        }
+        .section h3 {
+            color: #666;
+        }
+        .section p, .section ul, .section ol {
+            margin: 20px 0;
+        }
+        .section ul {
+            padding-left: 20px;
+            list-style-position: inside;
+        }
+        .section ol {
+            padding-left: 20px;
+            list-style-position: inside;
+        }
+        .section li {
+            margin-bottom: 10px;
+            font-family: baskerville;
+        }
+        .section li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .section form {
+            max-width: 400px;
+        }
+        .section input, .section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .section button {
+            width: 100%;
+            padding: 10px;
+            font-family: baskerville;
+            background-color: #ccc;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            font-family: baskerville;
+        }
+        .footer table {
+            border-collapse: collapse;
+        }
+        .footer th {
+            font-weight: normal;
+            padding: 0 5px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <table>
+            <thead>
+                <tr><th><a href="#home">Home</a></th></tr>
+                <tr><th><a href="#projects">Projects</a></th></tr>
+                <tr><th><a href="#about">About Me</a></th></tr>
+                <tr><th><a href="#contact">Contact Me</a></th></tr>
+            </thead>
+        </table>
+    </div>
+    
+    <div class="content">
+        <div id="home" class="section">
+            <h1>Portfolio</h1>
+            <h3>Web and Mobile Developer</h3>
+        </div>
+
+        <div id="projects" class="section">
+            <h2>My Projects</h2>
+            <ol>
+                <li>Hangman (Python)</li>
+                <li>
+                    <a href="https://sway.cloud.microsoft/5a0InDrOQjYkS7pK?ref=Link&fbclid=IwZXh0bgNhZW0CMTAAAR2sGZCW7Dqa2ECqpQySh5bDfm6qGOWjC_DjB7qdLeqE1VPa-y6S8OLwzJI_aem_FyYKnAgukf6ASz7za3GsOA">
+                    First Year Portfolio
+                    </a>
+                </li>
+                <li>Pet Adoption CRUD (PyQT6 project)</li>
+                <li>Serpent Splendor (HTML + XML + JavaScript)</li>
+                <li>Drive Abi (HTML + Django + JavaScript)</li>
+            </ol>
+            <p>*Include pictures in the future per project*</p>
+        </div>
+
+        <div id="about" class="section">
+            <h2>Introduction</h2>
+            <p>I am an aspiring front-end developer with a passion for creating beautiful and functional web applications. Languages I can code with are: <b><u>Java, JavaScript, Python, and C++</u></b>, and I am constantly learning new technologies to expand my skill set.</p>
+
+            <h2>Hobbies and Interests</h2>
+            <p>I enjoy going to the gym, filming content, and mostly editing. When not at the gym, I usually read from time to time. I am an outgoing person who also enjoys solitude.</p>
+
+            <h2>Skills</h2>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                
+                <label for="message">Details:</label>
+                <textarea id="message" placeholder="Enter your message"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <table>
+            <tfoot>
+                <tr>
+                    <th><a href="https://www.facebook.com">Facebook</a></th>
+                    <th><a href="https://www.twitter.com">X</a></th>
+                    <th><a href="https://www.instagram.com">Instagram</a></th>
+                    <th><a href="https://www.linkedin.com">LinkedIn</a></th>
+                </tr>
+            </tfoot>
+        </table>
+    </footer>
+    
+</body>
+</html>
